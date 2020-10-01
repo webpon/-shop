@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米商城</title>
+    <!-- 引入重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入图标字体库 -->
+    <link rel="stylesheet" href=".//font/css/all.css">
+    <!-- 引入基础样式表 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入当前页面的样式表 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 设置网站的图标（标题栏和收藏栏）
+            -网站图片一般都存储在网站的根目录下，名字一般都叫做favicon.ico
+    -->
+    <link rel="icon" href="./favicon.ico">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!-- 创建顶部导航条 -->
+    <!-- 顶部导航条外部容器 -->
+    <div class="topbar-warpper">
+        <!-- 创建内部容器 -->
+        <div class="topbar w clearfix">
+            <ul class="service">
+                <li><a href="javascript:;">小米商城</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">MIUI</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">IoT</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">云服务</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">金融</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">有品</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">小爱开放平台</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">企业团购</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">资质证照</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">协议规则</a></li>
+                <li class="line">|</li>
+                <li class="apphover"><a href="javascript:;" class="app">
+                    下载app
+                    <!-- 添加一个弹出层 -->
+                    <div class="qrcode">
+                        <img src="./img/download.png" alt="">
+                        <span>小米商城app</span>
+                    </div>
+                </a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">Select Location</a></li>
+            </ul>
+            <!-- 购物车 -->
+            <ul class="shop-cart">
+                <li><a href="javascript:;">
+                    <i class="fas fa-shopping-cart"></i>
+                    购物车(0)
+                </a></li>
+            </ul>
+            <!-- 用户注册登录 -->
+            <ul class="user-info">
+                <li><a href="javascript:;">登录</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">注册</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">消息通知</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <!-- 创建一个头部的外部容器 -->
+    <div class="header-warpper">
+        <div class="header w">
+            <!-- 创建一个logo -->
+            <h1 class="logo">
+                <a href="/"></a>
+            </h1>
+            <ul class="header_ul">
+                <li class="all-goods-warpper">
+                    <a href="javascript:;">全部商品分类</a>
+                    <!-- 创建一个左侧导航菜单 -->
+                    <ul class="left-menu">
+                        <li><a href="javascript:;">手机 电话卡<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">电视 盒子<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">笔记本 平板<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">家电 插线板<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">出行 穿戴<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">智能 路由器<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">手机 电话卡<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">手机 电话卡<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">手机 电话卡<i class="fas fa-angle-right"></i></a></li>
+                        <li><a href="javascript:;">手机 电话卡<i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">小米手机</a>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">Redmi红米</a>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">电视</a>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">笔记本</a>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">家电</a>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">路由器</a>
+                </li>
+                <li class="hoverbar">
+                    <a href="javascript:;">智能硬件</a>
+                </li>
+                <li>
+                    <a href="javascript:;">服务</a>
+                </li>
+                <li>
+                    <a href="javascript:;">社区</a>
+                </li>
+
+                <!-- 创建弹出层 -->
+                <div class="goods_info">
+                    <ul class="alertshop w">
+                        <li>
+                            <a href="#">
+                                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b11742a0be47f9d97bb6a13ea580018d.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                                <h3>小米10至尊版</h3>
+                                <span>5299元起</span>
+                                
+                            </a>
+                        </li>
+                        <!-- <div></div> -->
+                        <li>
+                            <a href="#">
+                                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                                <h3>小米10至尊版</h3>
+                                <span>5299元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                                <h3>小米10至尊版</h3>
+                                <span>5299元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3bf20f1df3f2e22c5b29ff07634f3c59.png?thumb=1&w=160&h=110&f=webp&q=90" alt="">
+                                <h3>小米10至尊版</h3>
+                                <span>5299元起</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5d19da60f9f62eb2aa5dcdbd7df19f0f.png?thumb=1&w=160&h=110&f=webp&q=90 " alt="">
+                                <h3>小米10至尊版</h3>
+                                <span>5299元起</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <form action="#" class="searchform">
+                <input type="text" placeholder="小米10" id="input-id">
+                
+                <div class="search_info">
+                   <li><a href="#">10x Pro直降200元</a></li>
+                   <li><a href="#">手机</a></li>
+                   <li><a href="#">电脑</a></li>
+                   <li><a href="#">家电</a></li>
+                   <li><a href="#">洗衣机</a></li>
+                   <li><a href="#">电脑</a></li>
+                   <li><a href="#">家电</a></li>
+                   <li><a href="#">洗衣机</a></li>
+                </div>
+                <submit class="search_btn">
+                    <i class="fas fa-search"></i>
+                </submit>
+            </form>
+           
+        </div>
+    </div>
+
+    <!-- 创建banner的容器 -->
+    <div class="banner_warpper w">
+        <div class="banner">
+            <ul class="img_list">
+                <li id=1><a href="#"><img src="./img/banner1.jpg" alt="" ></a></li>
+                <li id=2><a href="#"><img src="./img/banner2.jpg" alt="" ></a></li>
+                <li id=3><a href="#"><img src="./img/banner3.jpg" alt=""></a></li>
+                <li id=4><a href="#"><img src="./img/banner4.jpg" alt="" ></a></li>
+                <li id=5><a href="#"><img src="./img/banner5.jpg" alt=""></a></li>
+            </ul>
+            <div class="pointer">
+                <a href="javascript:;" class="active" id=1></a>
+                <a href="javascript:;" id=2></a>
+                <a href="javascript:;" id=3></a>
+                <a href="javascript:;" id=4></a>
+                <a href="javascript:;" id=5></a>
+            </div>
+
+            <div class="prev_next">
+                <a href="javasript:;" class="prev"></a>
+                <a href="javasript:;" class="next"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧工具栏 -->
+    <div class="back_top">
+
+    </div>
+
+    <!-- banner下面的广告栏 -->
+    <div class="banner_nav w clearfix">
+        <div class="banner_smallnav">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <ul>
+                            <h3><i class="fas fa-clock"></i></h3>
+                            小米秒杀
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <ul>
+                            <h3><i class="fas fa-clock"></i></h3>
+                            小米秒杀
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <ul>
+                            <h3><i class="fas fa-clock"></i></h3>
+                            小米秒杀
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <ul>
+                            <h3><i class="fas fa-clock"></i></h3>
+                            小米秒杀
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <ul>
+                            <h3><i class="fas fa-clock"></i></h3>
+                            小米秒杀
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <ul>
+                            <h3><i class="fas fa-clock"></i></h3>
+                            小米秒杀
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="banner_ul">
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/3.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 页面footer_bar  -->
+    <div class="footer_bar">
+        <div class="clock_bar w">
+            <div class="footer_title clearfix">
+                <h3>
+                    小米闪购
+                </h3>
+                <ul class="footer_title_control clearfix">
+                    <a href="javascript:;"><</a>
+                    <a href="javascript:;">></a>
+                </ul>
+            </div>
+
+            <div class="footer_bar_banner">
+               <div class="clock">
+                <div class="round">20:00 场</div>
+                <img src="data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAA1CAYAAAAklDnhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+                bWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+                bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+                eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1
+                MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+                dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+                dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAv
+                IiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RS
+                ZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpD
+                cmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5j
+                ZUlEPSJ4bXAuaWlkOjY4Q0ZFMkY5MTJFNzExRThCMkM4OEM1RTNBNjczQUVBIiB4bXBNTTpEb2N1
+                bWVudElEPSJ4bXAuZGlkOjY4Q0ZFMkZBMTJFNzExRThCMkM4OEM1RTNBNjczQUVBIj4gPHhtcE1N
+                OkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjhDRkUyRjcxMkU3MTFFOEIy
+                Qzg4QzVFM0E2NzNBRUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjhDRkUyRjgxMkU3MTFF
+                OEIyQzg4QzVFM0E2NzNBRUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94Onht
+                cG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5oEyacAAACoklEQVR42sSYv0tbURTHX0LqD6T4g4pE
+                cHDoUOloBxVd/QFFEcQqWtrSKlKFmmAslopohzgIbv4FwUEE0clFujiIi+BSIbRQ0ooKRReRULHf
+                S48Qgu++c3/FAx+iyU3eJzf3nnPuC/1qavQ04zVY8szjCHRGNN9cBD6DSkOJKzAGzsOaH/AW1FuY
+                jRg4EH/oiJSCTxYk1sDK7T86Iu9BraHED/Au9wlVkYdg2lAiC/rBhYnIB/DIUOQj2M9/UkWkCsQN
+                JbbA8l0vqIhMgXIDiZ/gFbgxEakBEwYSf8Eg+OM3gCsyA8oMRETy25UN4IjUgVEDiW2wGDSIIzIL
+                ijUljsFLv3WhIvKYFphOXNO6OOUMDhKZA7qFcQF85Q6WXeQpeKEpcULlvY8xthp8iwR8I93qLLb7
+                KnOsSPWNfhd6Bro99yHqTi9IhyWzEXIsIXbSG7Djt1jbQHsBZkMkyZRs13wpgIRoiJKy7dsBWh1L
+                bN5Vt3JFQrQ2XMYeGKBk5yvSI7aRQ4k0eA4uZZlVPM47lDgTZxd6lKb4AcqkLuKSZiIdVGsiVFNc
+                xDV9yT1Orekjoe+MDw4pHqwmaJewit66Ql0QaX+DOTaZe4DitAFZxQaaEynKnJ6KCDeaQAtj3A7V
+                kBtXIpwT3iFV06zqquaKPKEtKIsM6Mo/StoWiQeMvSCJjO4+54hEwTCjuTk0STgckUm6QxTY3LgU
+                Kc+/jyFrblyKCIkKbnPjSkT8HDGV5saVyBAtVHZz40Ik7HNTRtrcuBARF2tQbW5ciCR0mhvbIs2E
+                cnNjWySh29zYFGnIK25KzY1Nkdziptzc2BKJUu7Qbm5sicQom2o3NzZEKqiu/DZpbmyIjIAHNBMZ
+                7x4iTALjhcgVQSIl3v87w5vePcY/AQYAFYR6skFSqBUAAAAASUVORK5CYII=" alt="小米闪购">
+                <div class="desc">距离结束还有</div>
+                <div class="countdown clearfix"><span>00</span><i>:</i><span>00</span><i>:</i><span>00</span></div>
+               </div>
+               <div class="footer_banner_div">
+                   <ul class="footer_banner_ul clearfix">
+                       <!-- 1、 -->
+                       <li class="swiper-slide rainbow-item-13" id=1><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="6f608181c1787007" onclick="_msq.push(['trackEvent','81190ccc4d52f577-6f608181c1787007','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt=" 14 Ⅱ R5 8G 512G 银色" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3><p class="desc">全面屏高性能轻薄本</p><p class="price"><span>3599</span>元
+                        <del>3799元</del></p><!----></div></a></li>
+                        <li class="swiper-slide rainbow-item-13" id=2><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="6f608181c1787007" onclick="_msq.push(['trackEvent','81190ccc4d52f577-6f608181c1787007','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt=" 14 Ⅱ R5 8G 512G 银色" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3><p class="desc">全面屏高性能轻薄本</p><p class="price"><span>3599</span>元
+                            <del>3799元</del></p><!----></div></a></li>
+                            <li class="swiper-slide rainbow-item-13" id=3><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="6f608181c1787007" onclick="_msq.push(['trackEvent','81190ccc4d52f577-6f608181c1787007','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt=" 14 Ⅱ R5 8G 512G 银色" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3><p class="desc">全面屏高性能轻薄本</p><p class="price"><span>3599</span>元
+                                <del>3799元</del></p><!----></div></a></li>
+                                <li class="swiper-slide rainbow-item-13" id=4><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="6f608181c1787007" onclick="_msq.push(['trackEvent','81190ccc4d52f577-6f608181c1787007','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2202000016&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt=" 14 Ⅱ R5 8G 512G 银色" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1590376140.15942354.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3><p class="desc">全面屏高性能轻薄本</p><p class="price"><span>3599</span>元
+                                    <del>3799元</del></p><!----></div></a></li>
+                       <!-- 2、 -->
+                       <li class="swiper-slide rainbow-item-17 swiper-slide-active" id=5><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="d86dd120daa877c8" onclick="_msq.push(['trackEvent','81190ccc4d52f577-d86dd120daa877c8','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰" width="160" height="160" data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" lazy="loaded"></div><h3 class="title">小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰</h3><p class="desc">再次突破强大</p><p class="price"><span>5499</span>元
+                        <del>6299元</del></p><!----></div></a></li>
+                        <li class="swiper-slide rainbow-item-17 swiper-slide-active" id=6><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="d86dd120daa877c8" onclick="_msq.push(['trackEvent','81190ccc4d52f577-d86dd120daa877c8','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰" width="160" height="160" data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" lazy="loaded"></div><h3 class="title">小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰</h3><p class="desc">再次突破强大</p><p class="price"><span>5499</span>元
+                            <del>6299元</del></p><!----></div></a></li>
+                            <li class="swiper-slide rainbow-item-17 swiper-slide-active" id=7><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="d86dd120daa877c8" onclick="_msq.push(['trackEvent','81190ccc4d52f577-d86dd120daa877c8','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰" width="160" height="160" data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" lazy="loaded"></div><h3 class="title">小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰</h3><p class="desc">再次突破强大</p><p class="price"><span>5499</span>元
+                                <del>6299元</del></p><!----></div></a></li>
+                                <li class="swiper-slide rainbow-item-17 swiper-slide-active" id=8><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="d86dd120daa877c8" onclick="_msq.push(['trackEvent','81190ccc4d52f577-d86dd120daa877c8','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=2194100025&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰" width="160" height="160" data-src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/d9695deb5efdbca6c21d89248dbf3a81.jpg?thumb=1&amp;w=250&amp;h=250&amp;f=webp&amp;q=90" lazy="loaded"></div><h3 class="title">小米笔记本Pro 15.6 i5/8GB/1TB PCIe MX250 100% sRGB 深空灰</h3><p class="desc">再次突破强大</p><p class="price"><span>5499</span>元
+                                    <del>6299元</del></p><!----></div></a></li>
+                       <!-- 、 -->
+                       <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=9><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                        <del>2399元</del></p><!----></div></a></li>
+                        <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=10><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                            <del>2399元</del></p><!----></div></a></li>
+                            <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=11><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                                <del>2399元</del></p><!----></div></a></li>
+                                <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=12><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                                    <del>2399元</del></p><!----></div></a></li>
+                         <!-- 、 -->
+                       <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=13><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                        <del>2399元</del></p><!----></div></a></li>
+                        <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=14><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                            <del>2399元</del></p><!----></div></a></li>
+                            <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=15><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                                <del>2399元</del></p><!----></div></a></li>
+                                <li class="swiper-slide rainbow-item-14 swiper-slide-next" id=16><a href="//www.mi.com/buy/seckill" target="_blank" data-log_code="31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494" data-stat-id="dce0b63b038fd250" onclick="_msq.push(['trackEvent','81190ccc4d52f577-dce0b63b038fd250','//www.mi.com/buy/seckill','pcpid','31activity_homeseckill#goodsid=1191300026&amp;start_time=1600358400&amp;end_time=1600393320&amp;bid=3184494']);"><div class="content"><div class="thumb"><img alt="自清洁 | 米家互联网空调 1.5匹" width="160" height="160" data-src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1553854346.26097782.jpg?thumb=1&amp;w=250&amp;h=250" lazy="loaded"></div><h3 class="title">自清洁 | 米家互联网空调 1.5匹</h3><p class="desc">变频，高效制冷热，自清洁</p><p class="price"><span>1899</span>元
+                                    <del>2399元</del></p><!----></div></a></li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+         <!-- long banner -->
+    <div class="longbanner w">
+        <a href="javascript:;">
+            <img src="./img/longbanner.webp" alt="">
+        </a>
+    </div>
+
+    <!-- footer-end -->
+    <div class="footer_end w clearfix">
+        <div class="footer_end_title clearfix">
+            <h2>手机</h2>
+            <a href="javascript:;">查看全部 <i class="fas fa-chevron-circle-right"></i></a>
+        </div>
+        <div class="footer_end_banner clearfix">
+            <div class="footer_end_left clearfix">
+                <img src="./img/footer-end-left.webp" alt="">
+            </div>
+            <div class="footer_end_right">
+                <div class="footer_end_banner_warpper">
+                    <div class="footer_end_right_banner1">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner2">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner3">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner4">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner5">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner6">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner7">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                    <div class="footer_end_right_banner8">
+                        <a href="javascript::">
+                            <img src="./img/小米10.webp" alt="">
+                            <h2>小米10至尊版</h2>
+                            <p>120X 变焦/120W秒充/120Hz屏幕</p>
+                            <h3>5299元起</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer_info -->
+    <div class="footer_info">
+        <div class="footer_info_title w">
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <a href="javascript::"><i class="fas fa-wrench"></i>预约维修服务</a>
+                </li>
+                <li class="clearfix">
+                    <a href="javascript::"><i class="fas fa-wrench"></i>7天无理由退货</a>
+                </li>
+                <li class="clearfix">
+                    <a href="javascript::"><i class="fas fa-wrench"></i>15天免费换货</a>
+                <li class="clearfix">
+                    <a href="javascript::"><i class="fas fa-wrench"></i>满99包邮</a>
+                </li>
+                <li class="clearfix">
+                    <a href="javascript::"><i class="fas fa-wrench"></i>520余家售后网点</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer_info_lis w clearfix">
+            <ul class="clearfix">
+                <li>
+                    <h4>帮助中心</h4>
+                    <a href="javascript:;">账户管理</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                </li>
+                <li>
+                    <h4>帮助中心</h4>
+                    <a href="javascript:;">账户管理</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                </li>
+                <li>
+                    <h4>帮助中心</h4>
+                    <a href="javascript:;">账户管理</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                </li>
+                <li>
+                    <h4>帮助中心</h4>
+                    <a href="javascript:;">账户管理</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                </li>
+                <li>
+                    <h4>帮助中心</h4>
+                    <a href="javascript:;">账户管理</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                    <a href="javascript:;">订单中心</a>
+                </li>
+                <li>
+                    <h4>帮助中心</h4>
+                    <a href="javascript:;">账户管理</a>
+                    <a href="javascript:;">购物指南</a>
+                    <a href="javascript:;">订单中心</a>
+                </li>
+            </ul>
+            <div class="footer_info_contact">
+                <div class="footer_info_contact_warpper">
+                    <h5>400-100-5678</h5>
+                    <p>8:00-18:00（仅收市话费）</p>
+                    <a href="javasript:;">
+                        <i class="fas fa-envelope"></i>
+                        人工客服</a>
+                    <span>关注小米：<i class="fab fa-weibo"></i> <i class="fab fa-weixin"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_end_end">
+            <div class="footer_end_end_warpper w clearfix">
+                <img src="./img/logo-footer.png" alt="">
+                <div>
+                    <a href="javascript:;">
+                        小米商城
+                    </a>
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        MIUI
+                    </a>
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        米家
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        米聊
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        多看
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        游戏
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        政企服务
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        小米天猫店
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        小米集团隐私政策
+                    </a> 
+                    <i>|</i> 
+                    <a href="javascript:;">
+                        小米公司儿童信息保护规则
+                    </a> 
+                    <i>|</i>
+                    <a href="javascript:;">
+                        小米商城隐私政策
+                    </a> 
+                    <i>|</i>
+                    <a href="javascript:;">
+                        小米商城用户协议
+                    </a> 
+                    <i>|</i>
+                    <a href="javascript:;">
+                        问题反馈
+                    </a> 
+                    <i>|</i>
+                    <a href="javascript:;">
+                        Select Location
+                    </a> 
+                    
+                    
+                </div>
+                <p class="clearfix">
+                    © mi.com 京ICP证110507号 京ICP备10046444号 京公网安备11010802020134号 京网文[2020]0276-042号<br>
+（京）网械平台备字（2018）第00005号 互联网药品信息服务资格证 (京)-非经营性-2014-0090 营业执照 医疗器械质量公告<br>
+增值电信业务许可证 网络食品经营备案 京食药网食备202010048   食品经营许可证<br>
+违法和不良信息举报电话：171-5104-4404 知识产权侵权投诉 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试<br>
+                </p>
+               
+            </div>
+            <h5 >
+                让全球每个人都能享受科技带来的美好生活
+            </h5>
+        </div>
+    </div>
+   
+    </div>
+
+   
+</body>
+<script>
+
+    var input =document.getElementById("input-id");
+    var hoverbar=document.getElementsByClassName('hoverbar');
+    for(let i=0;i<7;i++){
+        hoverbar[i].onmouseover=function(){
+            input.blur();
+        }
+    }
+
+    
+
+</script>
+</html>
